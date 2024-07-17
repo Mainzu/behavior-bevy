@@ -299,7 +299,10 @@ name = "behavior-bevy"
 version = "0.1.0"
 dependencies = [
  "bevy",
+ "bitflags 2.6.0",
+ "enum-primitive-derive",
  "log",
+ "num-traits",
 ]
 
 [[package]]
@@ -1636,6 +1639,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fd31dbbd9743684d339f907a87fe212cb7b51d75b9e8e74181fe363199ee9b47"
 dependencies = [
  "proc-macro2",
+ "quote",
+ "syn 2.0.71",
+]
+
+[[package]]
+name = "enum-primitive-derive"
+version = "0.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ba7795da175654fe16979af73f81f26a8ea27638d8d9823d317016888a63dc4c"
+dependencies = [
+ "num-traits",
  "quote",
  "syn 2.0.71",
 ]
